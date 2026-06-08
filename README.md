@@ -10,7 +10,7 @@ Free and open-source Windows desktop app for generating QR codes from text and U
 
 Pre-built Windows release (no SDK required):
 
-**[Latest release](https://github.com/Mitroshenkov87/QrCodeGenerator/releases/latest)** — download `QrCodeGenerator-v1.0.0-win-x64.zip`, unzip, and run `QrCodeGenerator.exe`.
+**[Latest release](https://github.com/Mitroshenkov87/QrCodeGenerator/releases/latest)** — download `QrCodeGenerator-v1.0.1-win-x64.zip`, unzip, and run `QrCodeGenerator.exe`.
 
 ## Features
 

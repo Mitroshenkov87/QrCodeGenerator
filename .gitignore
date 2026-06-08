@@ -49,5 +49,6 @@ $RECYCLE.BIN/
 
 # Publish
 publish/
+dist/
 *.pubxml
 *.publishproj
