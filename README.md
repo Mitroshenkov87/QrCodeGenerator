@@ -4,7 +4,7 @@
 
 Free and open-source Windows desktop app for generating QR codes from text and URLs.
 
-![UI preview](Assets/ui-mockup-preview.jpg)
+![QR Code Generator screenshot](Assets/screenshot.png)
 
 ## Download
 
