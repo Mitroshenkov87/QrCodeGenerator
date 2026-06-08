@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\app-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\app-icon.ico" />
+    <Resource Include="Assets\app-icon-96.png" />
+    <Resource Include="Assets\sidebar-badge.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="QrCodeGenerator.Tests\**" />
+    <EmbeddedResource Remove="QrCodeGenerator.Tests\**" />
+    <None Remove="QrCodeGenerator.Tests\**" />
+    <Page Remove="QrCodeGenerator.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="QrCodeGenerator.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.*.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

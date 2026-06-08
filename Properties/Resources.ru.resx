@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>QR Code Generator</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>QR Code Generator</value>
+  </data>
+  <data name="AppSubtitle" xml:space="preserve">
+    <value>Создавайте QR-коды из текста и ссылок</value>
+  </data>
+  <data name="InputLabel" xml:space="preserve">
+    <value>Текст или ссылка</value>
+  </data>
+  <data name="InputPlaceholder" xml:space="preserve">
+    <value>Введите текст или URL для генерации QR-кода</value>
+  </data>
+  <data name="StatusGeneratingOnInput" xml:space="preserve">
+    <value>Генерация при вводе...</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>QR-код готов. Можно сохранить как PNG.</value>
+  </data>
+  <data name="StatusSaved" xml:space="preserve">
+    <value>Сохранено: {0}</value>
+  </data>
+  <data name="StatusSaveFailed" xml:space="preserve">
+    <value>Не удалось сохранить файл</value>
+  </data>
+  <data name="StatusGenerationFailed" xml:space="preserve">
+    <value>Ошибка генерации</value>
+  </data>
+  <data name="StatusDataTooLong" xml:space="preserve">
+    <value>Текст слишком длинный для QR-кода. Сократите ввод.</value>
+  </data>
+  <data name="PlaceholderTitle" xml:space="preserve">
+    <value>Здесь появится QR-код</value>
+  </data>
+  <data name="PlaceholderSubtitle" xml:space="preserve">
+    <value>Начните вводить текст слева</value>
+  </data>
+  <data name="LoadingText" xml:space="preserve">
+    <value>Генерация...</value>
+  </data>
+  <data name="GenerateButton" xml:space="preserve">
+    <value>Сгенерировать</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>Сохранить PNG</value>
+  </data>
+  <data name="ClearButton" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="SaveDialogTitle" xml:space="preserve">
+    <value>Сохранить QR-код</value>
+  </data>
+  <data name="SaveDialogFilter" xml:space="preserve">
+    <value>PNG изображение (*.png)|*.png</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ErrorGenerationMessage" xml:space="preserve">
+    <value>Не удалось создать QR-код:
+{0}</value>
+  </data>
+  <data name="ErrorSaveMessage" xml:space="preserve">
+    <value>Не удалось сохранить файл:
+{0}</value>
+  </data>
+  <data name="CharacterCountOne" xml:space="preserve">
+    <value>символ</value>
+  </data>
+  <data name="CharacterCountFew" xml:space="preserve">
+    <value>символа</value>
+  </data>
+  <data name="CharacterCountMany" xml:space="preserve">
+    <value>символов</value>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="AutomationInputTextBox" xml:space="preserve">
+    <value>Поле ввода текста или ссылки</value>
+  </data>
+  <data name="AutomationGenerateButton" xml:space="preserve">
+    <value>Сгенерировать QR-код</value>
+  </data>
+  <data name="AutomationSaveButton" xml:space="preserve">
+    <value>Сохранить QR-код как PNG</value>
+  </data>
+  <data name="AutomationClearButton" xml:space="preserve">
+    <value>Очистить ввод и предпросмотр</value>
+  </data>
+  <data name="AutomationQrPreview" xml:space="preserve">
+    <value>Предпросмотр QR-кода</value>
+  </data>
+  <data name="AutomationLanguageSelector" xml:space="preserve">
+    <value>Выбор языка</value>
+  </data>
+  <data name="InstallLabel" xml:space="preserve">
+    <value>Установка</value>
+  </data>
+  <data name="InstallButton" xml:space="preserve">
+    <value>Установить программу</value>
+  </data>
+  <data name="InstallDialogTitle" xml:space="preserve">
+    <value>Выбор типа установки</value>
+  </data>
+  <data name="InstallDialogDescription" xml:space="preserve">
+    <value>Выберите, куда установить QR Code Generator. В папке установки будет создан файл install.ini.</value>
+  </data>
+  <data name="InstallOptionLocalTitle" xml:space="preserve">
+    <value>Local (текущий пользователь)</value>
+  </data>
+  <data name="InstallOptionLocalDescription" xml:space="preserve">
+    <value>AppData\Local — для одного пользователя, только на этом компьютере</value>
+  </data>
+  <data name="InstallOptionRoamingTitle" xml:space="preserve">
+    <value>Roaming (текущий пользователь)</value>
+  </data>
+  <data name="InstallOptionRoamingDescription" xml:space="preserve">
+    <value>AppData\Roaming — для одного пользователя, синхронизируется с профилем учётной записи</value>
+  </data>
+  <data name="InstallOptionAllUsersTitle" xml:space="preserve">
+    <value>Все пользователи</value>
+  </data>
+  <data name="InstallOptionAllUsersDescription" xml:space="preserve">
+    <value>Program Files — для всех пользователей компьютера (может потребоваться запуск от администратора)</value>
+  </data>
+  <data name="InstallDialogConfirm" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="InstallDialogCancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="InstallSuccessTitle" xml:space="preserve">
+    <value>Установлено</value>
+  </data>
+  <data name="InstallSuccessMessage" xml:space="preserve">
+    <value>Приложение установлено в:
+{0}
+
+Ярлык в меню «Пуск»:
+{1}</value>
+  </data>
+  <data name="InstallSuccessWithWarningMessage" xml:space="preserve">
+    <value>Приложение установлено в:
+{0}
+
+Ярлык в меню «Пуск»:
+{1}
+
+Примечание: {2}</value>
+  </data>
+  <data name="InstallShortcutWarning" xml:space="preserve">
+    <value>Файлы установлены, но ярлык в меню «Пуск» создать не удалось: {0}</value>
+  </data>
+  <data name="InstallFailedTitle" xml:space="preserve">
+    <value>Ошибка установки</value>
+  </data>
+  <data name="InstallFailedMessage" xml:space="preserve">
+    <value>Не удалось установить приложение:
+{0}</value>
+  </data>
+  <data name="AutomationInstallButton" xml:space="preserve">
+    <value>Open installation options</value>
+  </data>
+</root>
