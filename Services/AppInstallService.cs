@@ -6,8 +6,8 @@ namespace QrCodeGenerator.Services;
 public enum InstallLocationType
 {
     Local,
-    Roaming,
-    AllUsers
+    AllUsers,
+    Roaming // Legacy installs only; no longer offered in the UI.
 }
 
 public sealed class AppInstallService
@@ -16,8 +16,11 @@ public sealed class AppInstallService
     private const string StartMenuFolderName = "QR Code Generator";
     private const string ExecutableName = "QrCodeGenerator.exe";
 
-    public IReadOnlyList<InstallLocationType> AllLocationTypes { get; } =
-        [InstallLocationType.Local, InstallLocationType.Roaming, InstallLocationType.AllUsers];
+    public IReadOnlyList<InstallLocationType> SelectableLocationTypes { get; } =
+        [InstallLocationType.Local, InstallLocationType.AllUsers];
+
+    private static readonly InstallLocationType[] KnownInstallLocations =
+        [InstallLocationType.Local, InstallLocationType.AllUsers, InstallLocationType.Roaming];
 
     public string GetInstallDirectory(InstallLocationType location) => location switch
     {
@@ -51,7 +54,7 @@ public sealed class AppInstallService
             return true;
         }
 
-        foreach (var location in AllLocationTypes)
+        foreach (var location in KnownInstallLocations)
         {
             var directory = GetInstallDirectory(location);
             if (InstallManifest.ExistsIn(directory))
@@ -72,7 +75,7 @@ public sealed class AppInstallService
             return manifest is not null;
         }
 
-        foreach (var location in AllLocationTypes)
+        foreach (var location in KnownInstallLocations)
         {
             var directory = GetInstallDirectory(location);
             if (!InstallManifest.ExistsIn(directory))

@@ -19,13 +19,11 @@ public class AppInstallServiceTests
     }
 
     [Fact]
-    public void GetInstallDirectory_Roaming_UsesAppDataRoaming()
+    public void SelectableLocationTypes_OnlyIncludesLocalAndProgramFiles()
     {
-        var path = _service.GetInstallDirectory(InstallLocationType.Roaming);
-        Assert.EndsWith("QrCodeGenerator", path);
-        Assert.StartsWith(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            path);
+        Assert.Equal(
+            [InstallLocationType.Local, InstallLocationType.AllUsers],
+            _service.SelectableLocationTypes);
     }
 
     [Fact]

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:props="clr-namespace:QrCodeGenerator.Properties"
         Title="{x:Static props:Resources.InstallDialogTitle}"
-        Height="430"
+        Height="360"
         Width="520"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
@@ -49,24 +49,6 @@
                                    Foreground="{StaticResource TextDarkBrush}"/>
                         <TextBlock x:Name="LocalOptionDescriptionText"
                                    Text="{x:Static props:Resources.InstallOptionLocalDescription}"
-                                   FontSize="12"
-                                   Foreground="{StaticResource TextMutedBrush}"
-                                   TextWrapping="Wrap"
-                                   Margin="0,4,0,0"/>
-                    </StackPanel>
-                </RadioButton>
-
-                <RadioButton x:Name="RoamingOption"
-                             GroupName="InstallScope"
-                             Margin="0,0,0,14">
-                    <StackPanel>
-                        <TextBlock x:Name="RoamingOptionTitleText"
-                                   Text="{x:Static props:Resources.InstallOptionRoamingTitle}"
-                                   FontSize="14"
-                                   FontWeight="SemiBold"
-                                   Foreground="{StaticResource TextDarkBrush}"/>
-                        <TextBlock x:Name="RoamingOptionDescriptionText"
-                                   Text="{x:Static props:Resources.InstallOptionRoamingDescription}"
                                    FontSize="12"
                                    Foreground="{StaticResource TextMutedBrush}"
                                    TextWrapping="Wrap"

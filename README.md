@@ -18,7 +18,7 @@ Pre-built Windows release (no SDK required):
 - Auto-generation with debounce, manual refresh, and PNG export
 - Adaptive error correction for long payloads
 - 14 languages: English, German, Russian, Ukrainian, Belarusian, Kazakh, Kyrgyz, Georgian, Armenian, Azerbaijani, Romanian, Tajik, Turkmen, Uzbek
-- Optional install to Local AppData, Roaming AppData, or Program Files with Start menu shortcut
+- Optional install to Local AppData or Program Files with Start menu shortcut
 
 ## Requirements
 

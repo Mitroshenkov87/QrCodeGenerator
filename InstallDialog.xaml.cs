@@ -21,8 +21,6 @@ public partial class InstallDialog : Window
         DialogDescriptionText.Text = AppResources.InstallDialogDescription;
         LocalOptionTitleText.Text = AppResources.InstallOptionLocalTitle;
         LocalOptionDescriptionText.Text = AppResources.InstallOptionLocalDescription;
-        RoamingOptionTitleText.Text = AppResources.InstallOptionRoamingTitle;
-        RoamingOptionDescriptionText.Text = AppResources.InstallOptionRoamingDescription;
         AllUsersOptionTitleText.Text = AppResources.InstallOptionAllUsersTitle;
         AllUsersOptionDescriptionText.Text = AppResources.InstallOptionAllUsersDescription;
         CancelButton.Content = AppResources.InstallDialogCancel;
@@ -33,9 +31,7 @@ public partial class InstallDialog : Window
     {
         SelectedLocation = LocalOption.IsChecked == true
             ? InstallLocationType.Local
-            : RoamingOption.IsChecked == true
-                ? InstallLocationType.Roaming
-                : InstallLocationType.AllUsers;
+            : InstallLocationType.AllUsers;
 
         DialogResult = true;
         Close();
