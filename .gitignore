@@ -47,6 +47,11 @@ $RECYCLE.BIN/
 # macOS
 .DS_Store
 
+# Secrets / env
+.env
+.env.*
+*.local
+
 # Publish
 publish/
 dist/
